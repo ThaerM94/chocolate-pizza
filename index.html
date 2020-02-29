@@ -7,15 +7,19 @@
     <title>chocolate-pizza </title>
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body> 
     <div id="container"> 
         <header>
-            <div id="img"><img src="/img/logo.png" alt="logo">
-            <h1>Delicious</h1>
-            <p id="food">THE BEST FOOD BLOG ON THE WEB</p></div>
+            <div id="logo"><img src="/img/logo.png" alt="logo">
+            <div class="logoImg">
+                <h2>Delicious</h2>
+            <p>THE BEST FOOD BLOG ON THE WEB</p>
+        </div></div>
 
         <div id="icons">
         <img src="/img/fb-icon.png" alt="facebook">
@@ -23,38 +27,35 @@
         <img src="/img/gp-icon.png" alt="">
         <img src="/img/insta-icon.png" alt="">
         <img src="/img/flic-icon.png" alt="">
-        <img src="/img/pint-icon.png" alt="">
-        <img src="/img/rss-icon.png" alt="">
+        <img  src="/img/pint-icon.png" alt="">
+        <img id="rss" src="/img/rss-icon.png" alt="">
         <img src="/img/mail-icon.png" alt="">
         </div>
+        <div id="bar"></div>
         </header>   
         <main>
-        <div id="bar"></div>
+        <div id="topMain">
+        <span>Chocolate Pizza</span><br>
+            <h6 id="date">POSTED ON 15 DEC 2013/DESSERTS</h6>
+        <h6 class="print">PRINT</h6><img id="print" src="/img/print-icon.png" alt="print"></div>
+        <img id="pizza" src="/img/choco-pizza.png" alt="">
         
-        <h1>
-            Chocolate Pizza <br>
-            <h6>POSTED ON 15 DEC 2013/DESSERTS</h6>
-        </h1>
-
-        <h6>PRINT</h6><img src="/img/print-icon.png" alt="">
-        <img src="/img/choco-pizza.png" alt="">
         <P>
-
             For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve
             all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring
             frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool
-            completely.</P>
-        <p>ce cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely
+            completely.</P> <br>
+        <p>Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely
             dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait
-            until the fig mixture is cooled.</p>
+            until the fig mixture is cooled.</p> <br>
         <p>
             Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer
             instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the
             nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass
             tupperware. Freeze for at least two hours before serving.
         </p>
-        <div>
-
+        <div> 
+            <div id="forms">
             <form id="recipe">
                 <input type="checkbox">
                 <label for="">1 1/2cups milk</label>
@@ -84,34 +85,36 @@
                 <input type="checkbox">
                 <label for="">1/2 cup mascarpone</label>
                 <br>
-                <input type="checkbox">
-                <label for="">4/3 granulated sugar</label>
+                <input type="checkbox" checked>
+                <label class="sugar">1/3 granulated sugar</label>
                 <br>
-                <input type="checkbox">
-                <label for="">2 egg yolks</label>
+                <input type="checkbox" checked>
+                <label class="egg">2 egg yolks</label>
                 <br>
                 <input type="checkbox">
                 <label for="">1 lemon,juiced</label>
                 <br>
                 <input type="checkbox">
-                <label for="">1 cup honey roasted pecans,roughly chopped</label>
+                <label for="">1 cup honey roasted pecans,roughly <br> <span class="chopped">chopped</span></label>
             </form>
-
-            <section>
-                <img src="/img/van-pic.png" alt="">
-                <H1>Vanessa Stevenson</H1>
+        </div>
+        <section>
+            <div id="bar2"></div>
+           <div  class ="section"> <img  src="/img/van-pic.png" alt="van" >
+                <h1>Vanessa Stevenson</h1>
                 <h4>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</h4>
-                <input type="button">
-
+                <input id="button" type="button" value="SHARE RECIPE">
+           </div>
             </section>
         </div>
-
-
     </main>
+    <footer>
+        <hr id="hrFooter">
+        <img src="img/logo.png" alt="" id="footer">
+        <p id="pFooter">Dellicious &copy 2013 . All Rights Reserved. <br> Proudly published with Ghost </p>
+    </footer>
     </div>
+    <script src="js/app.js"></script>
 </body>
-<footer>
-    
-</footer>
 
 </html>
